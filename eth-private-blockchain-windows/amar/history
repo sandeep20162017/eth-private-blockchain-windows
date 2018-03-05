@@ -1,0 +1,168 @@
+eth.getBalance("0xdda6ef2ff259928c561b2d30f0cad2c2736ce8b6")
+admin.nodeInfo.enode
+admin.nodeInfo.enode
+./eth-private-net start bob
+admin.nodeInfo.enode
+admin.addPeer("enode://55b9412e54e777aa8f0e864a4f0ccc759c7b608c660c8825cc2273047e37d73040cee5851aedc85aff4ee26d687fb553ec3e98980ab7c7cae6ac7e0f3a0cca20@[::]:40301?discport=0")
+admin.peers
+[A[Badmin.addPeer("enode://55b9412e54e777aa8f0e864a4f0ccc759c7b608c660c8825cc2273047e37d73040cee5851aedc85aff4ee26d687fb553ec3e98980ab7c7cae6ac7e0f3a0cca20@[::]:40301?discport=0")
+admin.addPeer("enode://55b9412e54e777aa8f0e864a4f0ccc759c7b608c660c8825cc2273047e37d73040cee5851aedc85aff4ee26d687fb553ec3e98980ab7c7cae6ac7e0f3a0cca20@[::]:40301?discport=0")
+admin.peers
+`./eth-private-net start bob`
+[A[B`./eth-private-net start bob`
+'./eth-private-net start bob'
+geth
+dir
+ls
+admin.nodeInfo.enode
+web3.net.peerCount
+admin.addPeer("enode://55b9412e54e777aa8f0e864a4f0ccc759c7b608c660c8825cc2273047e37d73040cee5851aedc85aff4ee26d687fb553ec3e98980ab7c7cae6ac7e0f3a0cca20@[::]:40302?discport=0")
+[A[A[B[B
+web3.net.peerCount
+admin.nodeInfo.enode
+admin.addPeer("enode://9acf55a755c7099650d12fa2b52e01b376ca61ca5aaa92b0737a39e17f849a94a5ea54f9d343eefc346d655eb1381fe2aa4a9e2ef7fedce2debe0710f8186dbf@[::]:40301?discport=0")
+miner.start()
+eth.getBalance(eth.coinbase)
+miner.stop()
+[A[Beth.getBalance(eth.coinbase)
+eth.getBalance(eth.coinbase)
+eth.blockNumber
+txn = eth.sendTransaction({ from: alice, to: bob, value: web3.toWei(1, "szabo") })
+loadScript('solidity/FreeBeer.sol.js')
+var deployTxn = { from: alice, data: freeBeerBytecode, gas: 200000 }
+var freeBeerContract = eth.contract(freeBeerAbi)
+var freeBeerInstance = freeBeerContract.new(deployTxn)
+var receipt = eth.getTransactionReceipt(freeBeerInstance.transactionHash)
+receipt.contractAddress
+txn = eth.sendTransaction({ from: alice, to: lily, value: web3.toWei(1, "szabo") })
+eth.getBalance(alice)
+eth.getBalance(lily)
+eth.getBalance(bob)
+freeBeerBytecode
+var deployTxn = { from: alice, data: freeBeerBytecode, gas: 200000 }
+var freeBeerContract = eth.contract(freeBeerAbi)
+var freeBeerInstance = freeBeerContract.new(deployTxn)
+var receipt = eth.getTransactionReceipt(freeBeerInstance.transactionHash)
+receipt.contractAddress
+eth.getBalance(alice)
+miner.start()
+miner.stop
+miner.stop()
+[ eth.getBalance(alice), eth.getBalance(bob)]
+receipt.contractAddress
+[ eth.getBalance(alice), eth.getBalance(bob)]
+var outputEvent = function (e, result) { console.log(JSON.stringify(result)); }
+freeBeerDeployed.MoneySent({}, { fromBlock: 0, toBlock: 'latest' }).get(outputEvent)
+var outputEvent = function (e, result) { console.log(JSON.stringify(result)); }
+freeBeerDeployed.MoneySent({}, { fromBlock: 0, toBlock: 'latest' }).get(outputEvent)
+admin.nodeInfo.enode
+admin.addPeer("enode://e309b42d05a7aede89dc535d834cb9299d88e83250b0827247edaac0cd8c9fd1e85939611a5253708d881a2008d5a8c74f95638d1190b5b7b3c9fec5ae7d2b5a@[::]:40302?discport=0")
+miner.start()
+eth.getBalance(eth.coinbase)
+eth.blockNumber
+eth.getBalance(eth.coinbase)
+miner.stop()
+eth.getBalance(eth.coinbase)
+miner.start()
+eth.getBalance(eth.coinbase)
+[ eth.getBalance(alice), eth.getBalance(bob), eth.getBalance(lily) ]
+eth.getBalance("0xdda6ef2ff259928c561b2d30f0cad2c2736ce8b6")
+admin.nodeInfo.enode
+admin.nodeInfo.enode
+admin.addPeer("enode://9fd4e4a290fb24a1d1e4e884249f5c1a2b23a2e860994f92fc80192921f6b8c8d741922a7a4839c8e49b337520978fde374ce5ab072a89e29a91ea0fd98260b9@[::]:40302?discport=0")
+[ eth.getBalance(alice), eth.getBalance(bob), eth.getBalance(lily) ]
+miner.start()
+eth.getBalance(eth.coinbase)
+miner.stop()
+eth.blockNumber
+txn = eth.sendTransaction({ from: alice, to: lily, value: web3.toWei(1, "szabo") })
+[ eth.getBalance(alice), eth.getBalance(bob), eth.getBalance(lily) ]
+txn = eth.sendTransaction({ from: alice, to: lily, value: web3.toWei(1, "szabo") })
+[ eth.getBalance(alice), eth.getBalance(bob), eth.getBalance(lily) ]
+txn = eth.sendTransaction({ from: alice, to: lily, value: web3.toWei(1, "szabo") })
+[ eth.getBalance(alice), eth.getBalance(bob), eth.getBalance(lily) ]
+var deployTxn = { from: alice, data: freeBeerBytecode, gas: 200000 }
+var freeBeerContract = eth.contract(freeBeerAbi)
+miner.start()
+var freeBeerContract = eth.contract(freeBeerAbi)
+miner.stop()
+var freeBeerContract = eth.contract(freeBeerAbi)
+var freeBeerContract = eth.contract(solidity\freeBeerAbi)
+var freeBeerContract = eth.contract(solidity/freeBeerAbi)
+var freeBeerContract = eth.contract(solidity/freeBeerAbi)[D[D[D[D[D[D[D[D[D
+var freeBeerContract = eth.contract(freeBeerAbi)
+var deployTxn = { from: alice, data: freeBeerBytecode, gas: 200000 }
+var freeBeerContract = eth.contract(freeBeerAbi)
+ls
+dir
+cd solidity
+var freeBeerContract = eth.contract('freeBeerAbi')
+var deployTxn = { from: alice, data: freeBeerBytecode, gas: 200000 }
+var deployTxn = { from: alice, data: 'freeBeerBytecode', gas: 200000 }
+eth.estimateGas(deployTxn)
+txn = eth.sendTransaction({ from: alice, to: lily, value: web3.toWei(1, "szabo") })
+var freeBeerContract = eth.contract(freeBeerAbi)
+var freeBeerContract = web3.eth.contract(freeBeerAbi)
+var freeBeerContract = web3.eth.contract(freeBeer.Abi)
+var freeBeerContract = web3.eth.contract(FreeBeer_sol_FreeBeer.Abi)
+var freightContract = web3.eth.contract([{"constant":false,"inputs":[{"name":"contNumber","type":"string"},{"name":"s_Invoice","type":"string"},{"name":"c_Invoice","type":"string"},{"name":"s_number","type":"string"},{"name":"t_Weight","type":"uint256"},{"name":"t_Quantity","type":"uint256"}],"name":"setFreight","outputs":[],"type":"function"},{"constant":false,"inputs":[{"name":"contNumber","type":"string"},{"name":"s_Invoice","type":"string"},{"name":"c_Invoice","type":"string"},{"name":"s_number","type":"string"},{"name":"t_Weight","type":"uint256"},{"name":"t_Quantity","type":"uint256"}],"name":"getFreight","outputs":[],"type":"function"},{"constant":true,"inputs":[],"name":"owner","outputs":[{"name":"","type":"address"}],"type":"function"},{"inputs":[],"type":"constructor"}]);
+var freight = freightContract.new(
+   {
+     from: web3.eth.accounts[0], 
+     data: '60606040525b33600060006101000a81548173ffffffffffffffffffffffffffffffffffffffff021916908302179055505b61033a8061003f6000396000f360606040526000357c010000000000000000000000000000000000000000000000000000000090048063124f32bf1461004f5780631a3241b61461018c5780638da5cb5b146102c95761004d565b005b61018a6004808035906020019082018035906020019191908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050909091908035906020019082018035906020019191908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050909091908035906020019082018035906020019191908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050909091908035906020019082018035906020019191908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050909091908035906020019091908035906020019091905050610328565b005b6102c76004808035906020019082018035906020019191908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050909091908035906020019082018035906020019191908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050909091908035906020019082018035906020019191908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050909091908035906020019082018035906020019191908080601f016020809104026020016040519081016040528093929190818152602001838380828437820191505050505050909091908035906020019091908035906020019091905050610331565b005b6102d66004805050610302565b604051808273ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1681565b5b505050505050565b5b50505050505056', 
+     gas: 3000000
+   }, function(e, contract){
+    console.log(e, contract);
+    if (typeof contract.address != 'undefined') {
+         console.log('Contract mined! address: ' + contract.address + ' transactionHash: ' + contract.transactionHash);
+    }
+ })
+ls
+var freeBeerContract = new web3.eth.Contract([...], '0xde0B295669a9FD93d5F28D9Ec85E40f4cb697BAe', {
+    from: '0xdda6ef2ff259928c561b2d30f0cad2c2736ce8b6', // default from address
+    gasPrice: '20000000000' // default gas price in wei, 20 gwei in this case
+});
+var freeBeerContract = new web3.eth.Contract([...], '0xde0B295669a9FD93d5F28D9Ec85E40f4cb697BAe', {   from: '0xdda6ef2ff259928c561b2d30f0cad2c2736ce8b6', gasPrice: '20000000000' // default gas price in wei, 20 gwei in this case });
+var freeBeerContract = new web3.eth.Contract([...], '0xde0B295669a9FD93d5F28D9Ec85E40f4cb697BAe', {   from: '0xdda6ef2ff259928c561b2d30f0cad2c2736ce8b6', gasPrice: '20000000000'})
+var contract1 = new eth.Contract(abi, address, {gasPrice: '12345678', from: fromAddress});
+const contract = web3.eth.contract(contractAbi);
+var contract = web3.eth.contract(contractAbi);
+var freeBeerContract = eth.contract(freeBeerAbi)
+loadScript('solidity/FreeBeer.sol.js')
+freeBeerBytecode
+var deployTxn = { from: alice, data: freeBeerBytecode, gas: 200000 }
+eth.estimateGas(deployTxn)
+var freeBeerContract = eth.contract(freeBeerAbi)
+var solc = require('solc')
+miner.start()
+eth.getBalance(alice)
+miner.stop()
+txn = eth.sendTransaction({ from: alice, to: lily, value: web3.toWei(1, "szabo") })
+[ eth.getBalance(alice), eth.getBalance(bob), eth.getBalance(lily) ]
+[ eth.getBalance(amar), eth.getBalance(akbar), eth.getBalance(anthony) ]
+start.mining()
+mining.start()
+miner.start()
+miner.stop()
+[ eth.getBalance(amar), eth.getBalance(akbar), eth.getBalance(anthony) ]
+miner.start()
+ls
+[ eth.getBalance(amar), eth.getBalance(akbar), eth.getBalance(anthony) ]
+miner.start()
+[ eth.getBalance(amar), eth.getBalance(akbar), eth.getBalance(anthony) ]
+eth.getBalance(eth.coinbase)
+q
+miner.start()
+[ eth.getBalance(amar), eth.getBalance(akbar), eth.getBalance(anthony) ]
+miner.stop()
+ls
+txn = eth.sendTransaction({ from: amar, to: akbar, value: web3.toWei(1, "szabo") })
+txn = eth.sendTransaction({ from: amar, to: akbar, value: web3.toWei(1, "szabo") })txn = eth.sendTransaction({ from: amar, to: akbar, value: web3.toWei(1, "szabo") })txn = eth.sendTransaction({ from: amar, to: akbar, value: web3.toWei(1, "szabo") })
+[ eth.getBalance(amar), eth.getBalance(akbar), eth.getBalance(anthony) ]
+miner.start()
+miner.stop()
+[ eth.getBalance(amar), eth.getBalance(akbar), eth.getBalance(anthony) ]
+loadScript('solidity/FreeCanady.sol.js')
+exit
+[ eth.getBalance(amar), eth.getBalance(akbar), eth.getBalance(anthony) ]
+loadScript('solidity/FreeCanady.sol.js')

@@ -1,0 +1,14 @@
+{
+  "name": "eth-private-blockchain",
+  "version": "1.0.0",
+  "description": "Get your own personal Ethereum private blockchain.",
+  "homepage": "https://github.com/sandeepkanao/eth-private-blockchain",
+  "dependencies": {
+    "solc": "^0.4.16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sandeepkanao/eth-private-net"
+  },
+  "author": "Sandeep Kanao (sandeep.kanao@gmail.com)"
+}

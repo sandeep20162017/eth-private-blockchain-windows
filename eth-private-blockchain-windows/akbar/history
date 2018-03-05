@@ -1,0 +1,45 @@
+bob
+admin.peers
+[A[B
+bob
+admin.peers
+admin.addPeer("enode://9acf55a755c7099650d12fa2b52e01b376ca61ca5aaa92b0737a39e17f849a94a5ea54f9d343eefc346d655eb1381fe2aa4a9e2ef7fedce2debe0710f8186dbf@[::]:40301?discport=0")
+admin.peers
+./eth-private-net connect alice bob
+admin.addPeer("enode://9acf55a755c7099650d12fa2b52e01b376ca61ca5aaa92b0737a39e17f849a94a5ea54f9d343eefc346d655eb1381fe2aa4a9e2ef7fedce2debe0710f8186dbf@[::]:40301?discport=0")
+bob
+admin.addPeer("enode://9acf55a755c7099650d12fa2b52e01b376ca61ca5aaa92b0737a39e17f849a94a5ea54f9d343eefc346d655eb1381fe2aa4a9e2ef7fedce2debe0710f8186dbf@[::]:40301?discport=0")
+admin.peers
+admin peers
+admin.peers
+bob
+loadScript('solidity/FreeBeer.sol.js')
+freeBeerBytecode
+[A
+txn = eth.sendTransaction({ from: alice, to: lily, value: web3.toWei(1, "szabo") })
+[A
+txn = eth.sendTransaction({ from: alice, to: bob, value: web3.toWei(1, "szabo") })
+[A[A[B[Bminer.start()
+miner.start
+miner.start()
+loadScript('solidity/FreeBeer.sol.js')
+var freeBeerContract = eth.contract(freeBeerAbi)
+var freeBeerDeployed = freeBeerContract.at("0x48c1bdb954c945a57459286719e1a3c86305fd9e")
+freeBeerDeployed.gimmeMoney.sendTransaction({ from: bob, value: web3.toWei(0.1, 'ether')})
+receipt.contractAddress
+[A[Breceipt.contractAddress
+receipt.contractAddress
+freeBeerDeployed.MoneySent({}, { fromBlock: 0, toBlock: 'latest' }).get(outputEvent)
+admin.addPeer("enode://fa6ce10b9fd1215a51206b7e1ff22b054f7aca1eb424f102c53c837413502df998d275fd034d3e8de3f8484166d1094d42213be053dd1b34e6e5bba4ea3aa524@[::]:40301?discport=0")
+admin.peers
+./eth-private-net connect alice bob
+admin.nodeInfo.enode
+admin.peers
+eth.getBalance(eth.coinbase)
+miner.start()
+eth.getBalance(eth.coinbase)
+admin.addPeer("enode://d10f4d783117caf6a6199663795acaf0a3b559c328c7ab2f80ecd92fd6ef88f2e2084fe5857f72051d59a1523cec3b57cefa65fb791d8ce733f8b42a2eb0ffc5@[::]:40301?discport=0")
+admin.nodeInfo.enode
+miner.start()
+miner.stop()
+var deployTxn = { from: alice, data: freeBeerBytecode, gas: 200000 }

@@ -1,0 +1,22 @@
+admin.addPeer("enode://fa6ce10b9fd1215a51206b7e1ff22b054f7aca1eb424f102c53c837413502df998d275fd034d3e8de3f8484166d1094d42213be053dd1b34e6e5bba4ea3aa524@[::]:40301?discport=0")
+admin.addPeer("enode://e309b42d05a7aede89dc535d834cb9299d88e83250b0827247edaac0cd8c9fd1e85939611a5253708d881a2008d5a8c74f95638d1190b5b7b3c9fec5ae7d2b5a@[::]:40302?discport=0")
+eth.getBalance(eth.coinbase)
+admin.addPeer("enode://d10f4d783117caf6a6199663795acaf0a3b559c328c7ab2f80ecd92fd6ef88f2e2084fe5857f72051d59a1523cec3b57cefa65fb791d8ce733f8b42a2eb0ffc5@[::]:40301?discport=0")
+admin.addPeer("enode://9fd4e4a290fb24a1d1e4e884249f5c1a2b23a2e860994f92fc80192921f6b8c8d741922a7a4839c8e49b337520978fde374ce5ab072a89e29a91ea0fd98260b9@[::]:40302?discport=0")
+miner.start()
+[ eth.getBalance(alice), eth.getBalance(bob), eth.getBalance(lily) ]
+miner.stop()
+loadScript('solidity/FreeBeer.sol.js')
+var freeBeerContract = eth.contract(freeBeerAbi)
+var freeBeerDeployed = freeBeerContract.at("0x48c1bdb954c945a57459286719e1a3c86305fd9e")
+freeBeerDeployed.gimmeMoney.sendTransaction({ from: lily, value: web3.toWei(0.1, 'ether')})
+freeBeerDeployed.gimmeMoney.sendTransaction({ from: bob, value: web3.toWei(0.1, 'ether')})
+freeBeerDeployed.gimmeMoney.sendTransaction({ from: lily, value: web3.toWei(0.1, 'ether')})
+[ eth.getBalance(alice), eth.getBalance(bob), eth.getBalance(lily) ]
+miner.start()
+[ eth.getBalance(alice), eth.getBalance(bob), eth.getBalance(lily) ]
+[A[B[ eth.getBalance(alice), eth.getBalance(bob), eth.getBalance(lily) ]
+[ eth.getBalance(alice), eth.getBalance(bob), eth.getBalance(lily) ]
+freeBeerDeployed.gimmeMoney.sendTransaction({ from: lily, value: web3.toWei(0.1, 'ether')})
+[ eth.getBalance(alice), eth.getBalance(bob), eth.getBalance(lily) ]
+miner.stop()

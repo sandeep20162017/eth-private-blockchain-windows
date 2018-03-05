@@ -1,0 +1,93 @@
+#!/bin/bash
+
+IDENTITIES=(amar akbar anthony)
+FLAGS='--networkid=8888 --preload=identities.js'
+DEV_FLAGS='--nodiscover --verbosity=4'
+
+BASE_PORT=40300
+BASE_RPC_PORT=8100
+
+SCRIPT=$(basename "$0")
+
+USAGE="Name:
+    $SCRIPT - Command line utility for creating and running a three node Ethereum private net
+
+    Network comes with three identities at the following addresses:
+
+        amar: 0xdda6ef2ff259928c561b2d30f0cad2c2736ce8b6 (initialized with 1 Ether)
+        akbar:   0x8691bf25ce4a56b15c1f99c944dc948269031801 (initialized with 1 Ether)
+        anthony:  0xb1b6a66a410edc72473d92decb3772bad863e243
+
+Usage:
+    $SCRIPT command [command options]
+
+Commands:
+    init       Initialize private network from genesis block in genesis.json
+    clean      Destroy all blockchain history, resetting to pristine state
+    start      Start a running ethereum node on the network (example: 'start amar')
+    help       Print this help message
+
+Author:
+    Sandeep Kanao -  sandeep.kanao@gmail.com
+"
+
+function exec_on_node() {
+  geth  --ipcdisable --exec="$2" attach ./$1/geth.ipc
+}
+
+CMD=$1
+case $CMD in
+  init)
+    for IDENTITY in ${IDENTITIES[@]}; do
+      echo "Initializing genesis block for $IDENTITY"
+      geth --ipcdisable --datadir=./$IDENTITY $FLAGS init genesis.json
+    done
+    ;;
+
+  clean)
+    for IDENTITY in ${IDENTITIES[@]}; do
+      echo "Cleaning geth/ directory from $IDENTITY"
+      rm -r ./$IDENTITY/geth
+    done
+    ;;
+
+  start)
+    IDENTITY=$2
+    if [ -z $IDENTITY ]
+    then
+      echo "No identity specified. Identity must be one of: ${IDENTITIES[*]}"
+      exit -1
+    fi
+
+    case $IDENTITY in
+      amar)
+        OFFSET=1
+        ;;
+
+      akbar)
+        OFFSET=2
+        ;;
+
+      anthony)
+        OFFSET=3
+        ;;
+    esac
+
+    PORT=$((BASE_PORT + OFFSET))
+    RPC_PORT=$((BASE_RPC_PORT + OFFSET))
+
+    echo "Starting node for $IDENTITY on port: $PORT, RPC port: $RPC_PORT. Console logs sent to ./$IDENTITY/console.log"
+    geth --ipcdisable --datadir=./$IDENTITY --port=$PORT --rpcport=$RPC_PORT $FLAGS $DEV_FLAGS console 2>> ./$IDENTITY/console.log
+    ;;
+
+
+  help)
+    echo "$USAGE"
+    ;;
+
+  *)
+    echo "Command '$CMD' not recognized!"
+    echo "$USAGE"
+    exit -1
+  ;;
+esac
